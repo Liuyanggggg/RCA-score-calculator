@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these tools, please cite the paper and this repository."
+title: "RCA Score Calculator: Response-Consistency-Across-endpoints scoring tools for network meta-analysis"
+version: 1.0.0
+date-released: "2026-09-08"
+authors:
+  - family-names: "Liu"
+    given-names: "Yang"
+  - family-names: "Song"
+    given-names: "Yuxuan"
+  - family-names: "Du"
+    given-names: "Yiqing"
+  - family-names: "Qin"
+    given-names: "Caipeng"
+  - family-names: "Xu"
+    given-names: "Tao"
+repository-code: "https://github.com/Liuyanggggg/RCA-score-calculator"
+license: MIT
