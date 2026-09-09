@@ -44,6 +44,11 @@ No installation, no macros — just Microsoft Excel (2016 or later, or Microsoft
 3. **`3-Direction_Matrix`** — automatic. Codes each value to +1 / 0 / −1 according to your setup rules.
 4. **`4-RCA_Results`** — read off `k_t`, `M_t`, all three raw and standardized scores, and the final rank.
 
+
+## Weights (optional)
+
+On `1-Setup`, **Apply weights?** is a Yes/No choice (default **No** = equal weights). Set it to **Yes** only if you want to use the Optional Weight column; authors choose the `w_i` values. Blank weights default to 1; negative weights are treated as 0. Weighted `RCA_lite` uses `w_i * d_i` and pairwise scores use `w_i * w_j`. Standardized pairwise scores are multiplied by `W / S_t`. With Apply weights? = No, results match the unweighted scores even if the weight column has been filled.
+
 ## Worked example (from the paper)
 
 Three hypothetical interventions (A–C) versus a common comparator; lower is favorable for OS/PFS/AEs, higher for ORR:
@@ -56,12 +61,12 @@ Three hypothetical interventions (A–C) versus a common comparator; lower is fa
 
 (Directions coded from point estimates; `*` = standardized to the 4-endpoint scale.)
 
-## Limitations (v1.0)
+## Limitations (v1.1)
 
 1. RCA discards effect-size magnitude in its simplest form.
 2. Results depend on prespecified coding rules.
 3. Rankings may be unstable when few endpoints are available.
-4. Weighted calculations are not yet supported (all endpoints default to weight 1).
+4. Weighting is optional: set Apply weights? to Yes to use author-specified w_i, or leave it as No for equal weights.
 5. RCA is a **first-line screening tool**, not a definitive treatment ranking.
 
 ## Citation
