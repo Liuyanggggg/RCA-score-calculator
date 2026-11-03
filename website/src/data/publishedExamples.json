@@ -1,0 +1,6571 @@
+{
+  "source": "返修/revised_Supporting_Information_S3_v2_10NMAs.xlsx",
+  "networks": [
+    {
+      "id": "yanagisawa-2024-mrcc",
+      "name": "Yanagisawa 2024 mRCC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "OR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Severe TRAE",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Nivolumab+ipilimumab",
+          "values": [
+            {
+              "effect": "0.72",
+              "lci": "0.62",
+              "uci": "0.85"
+            },
+            {
+              "effect": "0.86",
+              "lci": "0.73",
+              "uci": "1.01"
+            },
+            {
+              "effect": "1.35",
+              "lci": "1.05",
+              "uci": "1.73"
+            },
+            {
+              "effect": "0.51",
+              "lci": "0.40",
+              "uci": "0.66"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                0,
+                1,
+                1
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Avelumab+axitinib",
+          "values": [
+            {
+              "effect": "0.79",
+              "lci": "0.64",
+              "uci": "0.97"
+            },
+            {
+              "effect": "0.67",
+              "lci": "0.57",
+              "uci": "0.79"
+            },
+            {
+              "effect": "3.13",
+              "lci": "2.37",
+              "uci": "4.12"
+            },
+            {
+              "effect": "1.25",
+              "lci": "0.90",
+              "uci": "1.74"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab+axitinib",
+          "values": [
+            {
+              "effect": "0.84",
+              "lci": "0.71",
+              "uci": "0.99"
+            },
+            {
+              "effect": "0.69",
+              "lci": "0.59",
+              "uci": "0.81"
+            },
+            {
+              "effect": "2.35",
+              "lci": "1.79",
+              "uci": "3.09"
+            },
+            {
+              "effect": "1.21",
+              "lci": "0.91",
+              "uci": "1.61"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Nivolumab+cabozantinib",
+          "values": [
+            {
+              "effect": "0.70",
+              "lci": "0.56",
+              "uci": "0.87"
+            },
+            {
+              "effect": "0.58",
+              "lci": "0.48",
+              "uci": "0.71"
+            },
+            {
+              "effect": "3.18",
+              "lci": "2.30",
+              "uci": "4.40"
+            },
+            {
+              "effect": "1.65",
+              "lci": "1.20",
+              "uci": "2.28"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab+lenvatinib",
+          "values": [
+            {
+              "effect": "0.79",
+              "lci": "0.63",
+              "uci": "0.99"
+            },
+            {
+              "effect": "0.47",
+              "lci": "0.38",
+              "uci": "0.57"
+            },
+            {
+              "effect": "4.28",
+              "lci": "3.12",
+              "uci": "5.86"
+            },
+            {
+              "effect": "1.89",
+              "lci": "1.37",
+              "uci": "2.61"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fulgenzi-2023-hcc",
+      "name": "Fulgenzi 2023 HCC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "OR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Published safety RR (mixed definitions; see Notes)",
+          "statistic": "RR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Durvalumab+tremelimumab",
+          "values": [
+            {
+              "effect": "0.78",
+              "lci": "0.66",
+              "uci": "0.93"
+            },
+            {
+              "effect": "0.90",
+              "lci": "0.57",
+              "uci": "1.43"
+            },
+            {
+              "effect": "4.35",
+              "lci": "2.61",
+              "uci": "7.24"
+            },
+            {
+              "effect": "0.96",
+              "lci": "0.88",
+              "uci": "1.05"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                0,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Nivolumab",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.71",
+              "uci": "1.01"
+            },
+            {
+              "effect": "0.93",
+              "lci": "0.79",
+              "uci": "1.10"
+            },
+            {
+              "effect": "2.44",
+              "lci": "1.49",
+              "uci": "3.99"
+            },
+            {
+              "effect": "0.45",
+              "lci": "0.36",
+              "uci": "0.56"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab+bevacizumab",
+          "values": [
+            {
+              "effect": "0.66",
+              "lci": "0.52",
+              "uci": "0.84"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.53",
+              "uci": "0.80"
+            },
+            {
+              "effect": "3.33",
+              "lci": "1.91",
+              "uci": "5.83"
+            },
+            {
+              "effect": "1.14",
+              "lci": "0.99",
+              "uci": "1.31"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Sintilimab+IBI305",
+          "values": [
+            {
+              "effect": "0.57",
+              "lci": "0.43",
+              "uci": "0.75"
+            },
+            {
+              "effect": "0.56",
+              "lci": "0.45",
+              "uci": "0.69"
+            },
+            {
+              "effect": "6.25",
+              "lci": "2.76",
+              "uci": "14.17"
+            },
+            {
+              "effect": "1.14",
+              "lci": "0.96",
+              "uci": "1.36"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Camrelizumab+rivoceranib",
+          "values": [
+            {
+              "effect": "0.62",
+              "lci": "0.49",
+              "uci": "0.79"
+            },
+            {
+              "effect": "0.52",
+              "lci": "0.41",
+              "uci": "0.65"
+            },
+            {
+              "effect": "5.26",
+              "lci": "2.90",
+              "uci": "9.56"
+            },
+            {
+              "effect": "1.54",
+              "lci": "1.36",
+              "uci": "1.75"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab+lenvatinib",
+          "values": [
+            {
+              "effect": "0.77",
+              "lci": "0.62",
+              "uci": "0.97"
+            },
+            {
+              "effect": "0.52",
+              "lci": "0.35",
+              "uci": "0.77"
+            },
+            {
+              "effect": "5.21",
+              "lci": "3.13",
+              "uci": "8.67"
+            },
+            {
+              "effect": "1.23",
+              "lci": "1.07",
+              "uci": "1.42"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Tislelizumab",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.71",
+              "uci": "1.02"
+            },
+            {
+              "effect": "1.10",
+              "lci": "0.91",
+              "uci": "1.32"
+            },
+            {
+              "effect": "3.12",
+              "lci": "1.80",
+              "uci": "5.41"
+            },
+            {
+              "effect": "0.74",
+              "lci": "0.65",
+              "uci": "0.84"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                1,
+                1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab+cabozantinib",
+          "values": [
+            {
+              "effect": "0.90",
+              "lci": "0.69",
+              "uci": "1.18"
+            },
+            {
+              "effect": "0.63",
+              "lci": "0.44",
+              "uci": "0.91"
+            },
+            {
+              "effect": "3.23",
+              "lci": "1.49",
+              "uci": "7.00"
+            },
+            {
+              "effect": "1.39",
+              "lci": "1.16",
+              "uci": "1.67"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -2,
+              "rank": 8
+            }
+          }
+        },
+        {
+          "name": "Lenvatinib",
+          "values": [
+            {
+              "effect": "0.92",
+              "lci": "0.79",
+              "uci": "1.07"
+            },
+            {
+              "effect": "0.63",
+              "lci": "0.44",
+              "uci": "0.90"
+            },
+            {
+              "effect": "3.12",
+              "lci": "2.14",
+              "uci": "4.57"
+            },
+            {
+              "effect": "1.13",
+              "lci": "1.04",
+              "uci": "1.22"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -2,
+              "rank": 8
+            }
+          }
+        },
+        {
+          "name": "Donafenib",
+          "values": [
+            {
+              "effect": "0.91",
+              "lci": "0.76",
+              "uci": "1.08"
+            },
+            {
+              "effect": "1.02",
+              "lci": "0.88",
+              "uci": "1.19"
+            },
+            {
+              "effect": "1.69",
+              "lci": "0.81",
+              "uci": "3.54"
+            },
+            {
+              "effect": "0.86",
+              "lci": "0.76",
+              "uci": "0.97"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                1,
+                1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 11
+            }
+          }
+        },
+        {
+          "name": "Linifanib",
+          "values": [
+            {
+              "effect": "1.05",
+              "lci": "0.90",
+              "uci": "1.22"
+            },
+            {
+              "effect": "0.76",
+              "lci": "0.64",
+              "uci": "0.90"
+            },
+            {
+              "effect": "2.00",
+              "lci": "1.30",
+              "uci": "3.08"
+            },
+            {
+              "effect": "1.12",
+              "lci": "1.05",
+              "uci": "1.19"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -4,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 11
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -2,
+              "rank": 8
+            }
+          }
+        },
+        {
+          "name": "Brivanib",
+          "values": [
+            {
+              "effect": "1.06",
+              "lci": "0.93",
+              "uci": "1.21"
+            },
+            {
+              "effect": "1.01",
+              "lci": "0.88",
+              "uci": "1.16"
+            },
+            {
+              "effect": "1.39",
+              "lci": "0.94",
+              "uci": "2.04"
+            },
+            {
+              "effect": "1.04",
+              "lci": "0.98",
+              "uci": "1.11"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1,
+                -1
+              ],
+              "lite": -2,
+              "cob": -3,
+              "scob": -6,
+              "liteStd": -2,
+              "cobStd": -3,
+              "scobStd": -6,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 12
+            }
+          }
+        },
+        {
+          "name": "Sunitinib",
+          "values": [
+            {
+              "effect": "1.30",
+              "lci": "1.13",
+              "uci": "1.50"
+            },
+            {
+              "effect": "1.13",
+              "lci": "0.99",
+              "uci": "1.29"
+            },
+            {
+              "effect": "1.10",
+              "lci": "0.67",
+              "uci": "1.79"
+            },
+            {
+              "effect": "1.10",
+              "lci": "1.03",
+              "uci": "1.18"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1,
+                -1
+              ],
+              "lite": -2,
+              "cob": -3,
+              "scob": -6,
+              "liteStd": -2,
+              "cobStd": -3,
+              "scobStd": -6,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                -1,
+                0,
+                0,
+                -1
+              ],
+              "liteStd": -2,
+              "cobStd": -1,
+              "scobStd": -5,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Placebo",
+          "values": [
+            {
+              "effect": "1.46",
+              "lci": "1.21",
+              "uci": "1.75"
+            },
+            {
+              "effect": "1.74",
+              "lci": "1.43",
+              "uci": "2.11"
+            },
+            {
+              "effect": "0.31",
+              "lci": "0.08",
+              "uci": "1.15"
+            },
+            {
+              "effect": "1.03",
+              "lci": "0.90",
+              "uci": "1.18"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -4,
+              "cob": -6,
+              "scob": -6,
+              "liteStd": -4,
+              "cobStd": -6,
+              "scobStd": -6,
+              "rank": 14
+            },
+            "interval": {
+              "directions": [
+                -1,
+                -1,
+                0,
+                0
+              ],
+              "liteStd": -2,
+              "cobStd": -1,
+              "scobStd": -5,
+              "rank": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "kim-2026-hcc",
+      "name": "Kim 2026 HCC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "SAE>=G3",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "TACE+lenvatinib",
+          "values": [
+            {
+              "effect": "0.41",
+              "lci": "0.30",
+              "uci": "0.58"
+            },
+            {
+              "effect": "0.28",
+              "lci": "0.21",
+              "uci": "0.38"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                1,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                null
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Donafenib",
+          "values": [
+            {
+              "effect": "0.83",
+              "lci": "0.70",
+              "uci": "0.99"
+            },
+            {
+              "effect": "0.91",
+              "lci": "0.76",
+              "uci": "1.08"
+            },
+            {
+              "effect": "0.82",
+              "lci": "0.55",
+              "uci": "1.22"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 6
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab+bevacizumab",
+          "values": [
+            {
+              "effect": "0.66",
+              "lci": "0.51",
+              "uci": "0.85"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.52",
+              "uci": "0.81"
+            },
+            {
+              "effect": "1.95",
+              "lci": "1.32",
+              "uci": "2.88"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Camrelizumab+rivoceranib",
+          "values": [
+            {
+              "effect": "0.62",
+              "lci": "0.48",
+              "uci": "0.80"
+            },
+            {
+              "effect": "0.52",
+              "lci": "0.40",
+              "uci": "0.68"
+            },
+            {
+              "effect": "2.01",
+              "lci": "1.35",
+              "uci": "2.98"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Lenvatinib+pembrolizumab",
+          "values": [
+            {
+              "effect": "0.77",
+              "lci": "0.62",
+              "uci": "0.97"
+            },
+            {
+              "effect": "0.54",
+              "lci": "0.43",
+              "uci": "0.68"
+            },
+            {
+              "effect": "3.08",
+              "lci": "1.98",
+              "uci": "4.79"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Sintilimab+IBI305",
+          "values": [
+            {
+              "effect": "0.57",
+              "lci": "0.43",
+              "uci": "0.75"
+            },
+            {
+              "effect": "0.61",
+              "lci": "0.50",
+              "uci": "0.75"
+            },
+            {
+              "effect": "2.01",
+              "lci": "1.32",
+              "uci": "3.06"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Nivolumab",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.71",
+              "uci": "1.02"
+            },
+            {
+              "effect": "0.93",
+              "lci": "0.79",
+              "uci": "1.10"
+            },
+            {
+              "effect": "1.10",
+              "lci": "0.70",
+              "uci": "1.73"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 7
+            }
+          }
+        },
+        {
+          "name": "Cabozantinib+atezolizumab",
+          "values": [
+            {
+              "effect": "0.98",
+              "lci": "0.77",
+              "uci": "1.24"
+            },
+            {
+              "effect": "0.74",
+              "lci": "0.56",
+              "uci": "0.97"
+            },
+            {
+              "effect": "1.56",
+              "lci": "1.12",
+              "uci": "2.17"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                -1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 12
+            }
+          }
+        },
+        {
+          "name": "Lenvatinib",
+          "values": [
+            {
+              "effect": "0.92",
+              "lci": "0.80",
+              "uci": "1.06"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.55",
+              "uci": "0.77"
+            },
+            {
+              "effect": "1.76",
+              "lci": "1.35",
+              "uci": "2.30"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                -1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 12
+            }
+          }
+        },
+        {
+          "name": "TACE+sorafenib",
+          "values": [
+            {
+              "effect": "0.91",
+              "lci": "0.68",
+              "uci": "1.21"
+            },
+            {
+              "effect": "0.73",
+              "lci": "0.59",
+              "uci": "0.91"
+            },
+            {
+              "effect": "2.02",
+              "lci": "1.23",
+              "uci": "3.32"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                -1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 12
+            }
+          }
+        },
+        {
+          "name": "Tremelimumab+durvalumab",
+          "values": [
+            {
+              "effect": "0.78",
+              "lci": "0.64",
+              "uci": "0.95"
+            },
+            {
+              "effect": "0.90",
+              "lci": "0.75",
+              "uci": "1.09"
+            },
+            {
+              "effect": "1.66",
+              "lci": "1.23",
+              "uci": "2.23"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                0,
+                -1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 12
+            }
+          }
+        },
+        {
+          "name": "HAIC+sorafenib",
+          "values": [
+            {
+              "effect": "1.03",
+              "lci": "0.79",
+              "uci": "1.34"
+            },
+            {
+              "effect": "0.82",
+              "lci": "0.63",
+              "uci": "1.06"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                null
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -1,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -3,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 7
+            }
+          }
+        },
+        {
+          "name": "Durvalumab",
+          "values": [
+            {
+              "effect": "0.86",
+              "lci": "0.71",
+              "uci": "1.05"
+            },
+            {
+              "effect": "1.02",
+              "lci": "0.84",
+              "uci": "1.23"
+            },
+            {
+              "effect": "1.10",
+              "lci": "0.81",
+              "uci": "1.49"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                -1
+              ],
+              "lite": -1,
+              "cob": -1,
+              "scob": -3,
+              "liteStd": -1,
+              "cobStd": -1,
+              "scobStd": -3,
+              "rank": 13
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 7
+            }
+          }
+        },
+        {
+          "name": "Tislelizumab",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.71",
+              "uci": "1.02"
+            },
+            {
+              "effect": "1.11",
+              "lci": "0.89",
+              "uci": "1.39"
+            },
+            {
+              "effect": "1.09",
+              "lci": "0.78",
+              "uci": "1.52"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                -1
+              ],
+              "lite": -1,
+              "cob": -1,
+              "scob": -3,
+              "liteStd": -1,
+              "cobStd": -1,
+              "scobStd": -3,
+              "rank": 13
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 7
+            }
+          }
+        },
+        {
+          "name": "SIRT+sorafenib",
+          "values": [
+            {
+              "effect": "1.01",
+              "lci": "0.82",
+              "uci": "1.25"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.05",
+              "lci": "0.71",
+              "uci": "1.55"
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                -1,
+                null,
+                -1
+              ],
+              "lite": -2,
+              "cob": -1,
+              "scob": -1,
+              "liteStd": -3,
+              "cobStd": -3,
+              "scobStd": -3,
+              "rank": 15
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 7
+            }
+          }
+        },
+        {
+          "name": "Pexastimogene+sorafenib",
+          "values": [
+            {
+              "effect": "1.19",
+              "lci": "0.93",
+              "uci": "1.53"
+            },
+            {
+              "effect": "1.22",
+              "lci": "0.97",
+              "uci": "1.53"
+            },
+            {
+              "effect": "2.11",
+              "lci": "1.45",
+              "uci": "3.07"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -3,
+              "cob": -3,
+              "scob": -3,
+              "liteStd": -3,
+              "cobStd": -3,
+              "scobStd": -3,
+              "rank": 15
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                -1
+              ],
+              "liteStd": -1,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 16
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "zhao-2025-es-sclc",
+      "name": "Zhao 2025 ES-SCLC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "OR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade>=3 AE",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Toripalimab+chemo",
+          "values": [
+            {
+              "effect": "0.80",
+              "lci": "0.65",
+              "uci": "0.98"
+            },
+            {
+              "effect": "0.67",
+              "lci": "0.54",
+              "uci": "0.82"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                1,
+                null,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                null,
+                null
+              ],
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Durvalumab+chemo",
+          "values": [
+            {
+              "effect": "0.75",
+              "lci": "0.62",
+              "uci": "0.91"
+            },
+            {
+              "effect": "0.80",
+              "lci": "0.66",
+              "uci": "0.96"
+            },
+            {
+              "effect": "1.53",
+              "lci": "1.08",
+              "uci": "2.18"
+            },
+            {
+              "effect": "0.84",
+              "lci": "0.58",
+              "uci": "1.20"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Tislelizumab+chemo",
+          "values": [
+            {
+              "effect": "0.75",
+              "lci": "0.61",
+              "uci": "0.92"
+            },
+            {
+              "effect": "0.63",
+              "lci": "0.51",
+              "uci": "0.78"
+            },
+            {
+              "effect": "1.33",
+              "lci": "0.91",
+              "uci": "1.96"
+            },
+            {
+              "effect": "0.98",
+              "lci": "0.58",
+              "uci": "1.66"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Veliparib+chemo",
+          "values": [
+            {
+              "effect": "0.83",
+              "lci": "0.56",
+              "uci": "1.23"
+            },
+            {
+              "effect": "0.75",
+              "lci": "0.52",
+              "uci": "1.08"
+            },
+            {
+              "effect": "1.34",
+              "lci": "0.63",
+              "uci": "2.83"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                null
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 12
+            }
+          }
+        },
+        {
+          "name": "Serplulimab+chemo",
+          "values": [
+            {
+              "effect": "0.63",
+              "lci": "0.49",
+              "uci": "0.82"
+            },
+            {
+              "effect": "0.47",
+              "lci": "0.38",
+              "uci": "0.59"
+            },
+            {
+              "effect": "1.70",
+              "lci": "1.15",
+              "uci": "2.53"
+            },
+            {
+              "effect": "1.30",
+              "lci": "0.89",
+              "uci": "1.90"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Benmelstobart+anlotinib+chemo",
+          "values": [
+            {
+              "effect": "0.61",
+              "lci": "0.47",
+              "uci": "0.79"
+            },
+            {
+              "effect": "0.33",
+              "lci": "0.26",
+              "uci": "0.41"
+            },
+            {
+              "effect": "2.16",
+              "lci": "1.43",
+              "uci": "3.27"
+            },
+            {
+              "effect": "2.01",
+              "lci": "1.09",
+              "uci": "3.73"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Adebrelimab+chemo",
+          "values": [
+            {
+              "effect": "0.72",
+              "lci": "0.58",
+              "uci": "0.90"
+            },
+            {
+              "effect": "0.67",
+              "lci": "0.54",
+              "uci": "0.83"
+            },
+            {
+              "effect": "1.23",
+              "lci": "0.83",
+              "uci": "1.82"
+            },
+            {
+              "effect": "1.06",
+              "lci": "0.63",
+              "uci": "1.77"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab+chemo",
+          "values": [
+            {
+              "effect": "0.79",
+              "lci": "0.64",
+              "uci": "0.98"
+            },
+            {
+              "effect": "0.75",
+              "lci": "0.61",
+              "uci": "0.91"
+            },
+            {
+              "effect": "1.49",
+              "lci": "1.00",
+              "uci": "2.20"
+            },
+            {
+              "effect": "1.10",
+              "lci": "0.71",
+              "uci": "1.70"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Socazolimab+chemo",
+          "values": [
+            {
+              "effect": "0.80",
+              "lci": "0.65",
+              "uci": "0.98"
+            },
+            {
+              "effect": "0.57",
+              "lci": "0.46",
+              "uci": "0.71"
+            },
+            {
+              "effect": "1.45",
+              "lci": "0.96",
+              "uci": "2.17"
+            },
+            {
+              "effect": "1.30",
+              "lci": "0.85",
+              "uci": "1.99"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        },
+        {
+          "name": "Nivolumab+chemo",
+          "values": [
+            {
+              "effect": "0.67",
+              "lci": "0.46",
+              "uci": "0.98"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.46",
+              "uci": "0.91"
+            },
+            {
+              "effect": "1.22",
+              "lci": "0.66",
+              "uci": "2.27"
+            },
+            {
+              "effect": "2.14",
+              "lci": "1.04",
+              "uci": "4.42"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                -1
+              ],
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -2,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "Durvalumab+tremelimumab+chemo",
+          "values": [
+            {
+              "effect": "0.82",
+              "lci": "0.68",
+              "uci": "1.00"
+            },
+            {
+              "effect": "0.84",
+              "lci": "0.70",
+              "uci": "1.01"
+            },
+            {
+              "effect": "1.02",
+              "lci": "0.72",
+              "uci": "1.43"
+            },
+            {
+              "effect": "1.57",
+              "lci": "1.11",
+              "uci": "2.22"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                -1
+              ],
+              "liteStd": -1,
+              "cobStd": 0,
+              "scobStd": -3,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Ipilimumab+chemo",
+          "values": [
+            {
+              "effect": "0.94",
+              "lci": "0.81",
+              "uci": "1.09"
+            },
+            {
+              "effect": "0.85",
+              "lci": "0.75",
+              "uci": "0.97"
+            },
+            {
+              "effect": "1.00",
+              "lci": "0.77",
+              "uci": "1.30"
+            },
+            {
+              "effect": "1.14",
+              "lci": "0.89",
+              "uci": "1.48"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                0,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -2,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -2,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 11
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab+chemo",
+          "values": [
+            {
+              "effect": "0.75",
+              "lci": "0.60",
+              "uci": "0.95"
+            },
+            {
+              "effect": "0.77",
+              "lci": "0.63",
+              "uci": "0.95"
+            },
+            {
+              "effect": "0.84",
+              "lci": "0.56",
+              "uci": "1.25"
+            },
+            {
+              "effect": "1.04",
+              "lci": "0.70",
+              "uci": "1.55"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1,
+                -1
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -4,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 13
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mori-2022-prostate",
+      "name": "Mori 2022 Prostate",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade >=3 AEs",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Abiraterone + ADT",
+          "values": [
+            {
+              "effect": "0.83",
+              "lci": "0.76",
+              "uci": "0.90"
+            },
+            {
+              "effect": "0.71",
+              "lci": "0.67",
+              "uci": "0.76"
+            },
+            {
+              "effect": "1.93",
+              "lci": "0.81",
+              "uci": "4.57"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Apalutamide + ADT",
+          "values": [
+            {
+              "effect": "0.84",
+              "lci": "0.69",
+              "uci": "1.02"
+            },
+            {
+              "effect": "0.73",
+              "lci": "0.65",
+              "uci": "0.81"
+            },
+            {
+              "effect": "1.01",
+              "lci": "0.43",
+              "uci": "2.40"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Docetaxel + ADT",
+          "values": [
+            {
+              "effect": "0.90",
+              "lci": "0.82",
+              "uci": "0.98"
+            },
+            {
+              "effect": "0.84",
+              "lci": "0.78",
+              "uci": "0.90"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                1,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                null
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Enzalutamide + ADT",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.73",
+              "uci": "0.99"
+            },
+            {
+              "effect": "0.67",
+              "lci": "0.63",
+              "uci": "0.71"
+            },
+            {
+              "effect": "1.28",
+              "lci": "0.69",
+              "uci": "2.36"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 2
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "liu-2022-gastric",
+      "name": "Liu 2022 Gastric",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "RR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade >=3 AEs",
+          "statistic": "RR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Pembrolizumab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.74",
+              "lci": "0.48",
+              "uci": "1.16"
+            },
+            {
+              "effect": "0.63",
+              "lci": "0.35",
+              "uci": "1.13"
+            },
+            {
+              "effect": "2.93",
+              "lci": "1.25",
+              "uci": "6.89"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                null
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                1,
+                null
+              ],
+              "liteStd": 1.333333333333333,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Nivolumab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.84",
+              "lci": "0.65",
+              "uci": "1.10"
+            },
+            {
+              "effect": "0.73",
+              "lci": "0.50",
+              "uci": "1.06"
+            },
+            {
+              "effect": "1.48",
+              "lci": "0.74",
+              "uci": "2.97"
+            },
+            {
+              "effect": "1.63",
+              "lci": "0.86",
+              "uci": "3.12"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Rilotumumab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.97",
+              "lci": "0.71",
+              "uci": "1.23"
+            },
+            {
+              "effect": "0.83",
+              "lci": "0.57",
+              "uci": "1.20"
+            },
+            {
+              "effect": "1.49",
+              "lci": "0.77",
+              "uci": "2.96"
+            },
+            {
+              "effect": "3.30",
+              "lci": "1.41",
+              "uci": "8.12"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                -1
+              ],
+              "liteStd": -1,
+              "cobStd": 0,
+              "scobStd": -3,
+              "rank": 11
+            }
+          }
+        },
+        {
+          "name": "Andecaliximab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.93",
+              "lci": "0.63",
+              "uci": "1.38"
+            },
+            {
+              "effect": "0.84",
+              "lci": "0.49",
+              "uci": "1.43"
+            },
+            {
+              "effect": "1.46",
+              "lci": "0.71",
+              "uci": "3.02"
+            },
+            {
+              "effect": "0.88",
+              "lci": "0.35",
+              "uci": "2.22"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Bevacizumab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.93",
+              "lci": "0.72",
+              "uci": "1.27"
+            },
+            {
+              "effect": "0.87",
+              "lci": "0.60",
+              "uci": "1.28"
+            },
+            {
+              "effect": "1.43",
+              "lci": "0.82",
+              "uci": "2.43"
+            },
+            {
+              "effect": "0.85",
+              "lci": "0.41",
+              "uci": "1.63"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Ramucirumab + chemotherapy",
+          "values": [
+            {
+              "effect": "1.03",
+              "lci": "0.83",
+              "uci": "1.32"
+            },
+            {
+              "effect": "0.92",
+              "lci": "0.67",
+              "uci": "1.26"
+            },
+            {
+              "effect": "1.21",
+              "lci": "0.76",
+              "uci": "1.87"
+            },
+            {
+              "effect": "1.15",
+              "lci": "0.69",
+              "uci": "2.28"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -4,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Cetuximab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.96",
+              "lci": "0.68",
+              "uci": "1.26"
+            },
+            {
+              "effect": "0.96",
+              "lci": "0.61",
+              "uci": "1.41"
+            },
+            {
+              "effect": "1.20",
+              "lci": "0.75",
+              "uci": "2.57"
+            },
+            {
+              "effect": "1.12",
+              "lci": "0.45",
+              "uci": "2.78"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Trebananib + chemotherapy",
+          "values": [
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.98",
+              "lci": "0.53",
+              "uci": "1.80"
+            },
+            {
+              "effect": "1.01",
+              "lci": "0.40",
+              "uci": "2.54"
+            },
+            {
+              "effect": "1.52",
+              "lci": "0.48",
+              "uci": "4.77"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                null,
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 7
+            },
+            "interval": {
+              "directions": [
+                null,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Panitumumab + chemotherapy",
+          "values": [
+            {
+              "effect": "1.06",
+              "lci": "0.86",
+              "uci": "1.37"
+            },
+            {
+              "effect": "1.04",
+              "lci": "0.74",
+              "uci": "1.44"
+            },
+            {
+              "effect": "1.17",
+              "lci": "0.72",
+              "uci": "1.94"
+            },
+            {
+              "effect": "1.55",
+              "lci": "0.82",
+              "uci": "3.45"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1,
+                -1
+              ],
+              "lite": -2,
+              "cob": -3,
+              "scob": -6,
+              "liteStd": -2,
+              "cobStd": -3,
+              "scobStd": -6,
+              "rank": 9
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Onartuzumab + chemotherapy",
+          "values": [
+            {
+              "effect": "1.06",
+              "lci": "0.59",
+              "uci": "1.91"
+            },
+            {
+              "effect": "1.08",
+              "lci": "0.57",
+              "uci": "2.03"
+            },
+            {
+              "effect": "1.17",
+              "lci": "0.46",
+              "uci": "3.02"
+            },
+            {
+              "effect": "2.16",
+              "lci": "0.60",
+              "uci": "8.26"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1,
+                -1
+              ],
+              "lite": -2,
+              "cob": -3,
+              "scob": -6,
+              "liteStd": -2,
+              "cobStd": -3,
+              "scobStd": -6,
+              "rank": 9
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Ziv-aflibercept + chemotherapy",
+          "values": [
+            {
+              "effect": "1.24",
+              "lci": "0.66",
+              "uci": "2.33"
+            },
+            {
+              "effect": "1.11",
+              "lci": "0.54",
+              "uci": "2.29"
+            },
+            {
+              "effect": "1.62",
+              "lci": "0.35",
+              "uci": "6.68"
+            },
+            {
+              "effect": "2.12",
+              "lci": "0.46",
+              "uci": "9.45"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1,
+                -1
+              ],
+              "lite": -2,
+              "cob": -3,
+              "scob": -6,
+              "liteStd": -2,
+              "cobStd": -3,
+              "scobStd": -6,
+              "rank": 9
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Ipatasertib + chemotherapy",
+          "values": [
+            {
+              "effect": "1.85",
+              "lci": "1.11",
+              "uci": "3.10"
+            },
+            {
+              "effect": "1.12",
+              "lci": "0.63",
+              "uci": "2.00"
+            },
+            {
+              "effect": "0.85",
+              "lci": "0.35",
+              "uci": "2.04"
+            },
+            {
+              "effect": "1.18",
+              "lci": "0.39",
+              "uci": "3.65"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -4,
+              "cob": -6,
+              "scob": -6,
+              "liteStd": -4,
+              "cobStd": -6,
+              "scobStd": -6,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                -1,
+                0,
+                0,
+                0
+              ],
+              "liteStd": -1,
+              "cobStd": 0,
+              "scobStd": -3,
+              "rank": 11
+            }
+          }
+        },
+        {
+          "name": "Nimotuzumab + chemotherapy",
+          "values": [
+            {
+              "effect": "1.77",
+              "lci": "0.89",
+              "uci": "3.46"
+            },
+            {
+              "effect": "2.14",
+              "lci": "1.01",
+              "uci": "4.54"
+            },
+            {
+              "effect": "0.88",
+              "lci": "0.27",
+              "uci": "2.85"
+            },
+            {
+              "effect": "4.48",
+              "lci": "1.08",
+              "uci": "21.06"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -4,
+              "cob": -6,
+              "scob": -6,
+              "liteStd": -4,
+              "cobStd": -6,
+              "scobStd": -6,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                0,
+                -1,
+                0,
+                -1
+              ],
+              "liteStd": -2,
+              "cobStd": -1,
+              "scobStd": -5,
+              "rank": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sun-2026-tnbc",
+      "name": "Sun 2026 TNBC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "OR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade >=3 AEs",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Cobimetinib + chemotherapy",
+          "values": [
+            {
+              "effect": "1.05",
+              "lci": "0.54",
+              "uci": "2.04"
+            },
+            {
+              "effect": "0.73",
+              "lci": "0.43",
+              "uci": "1.22"
+            },
+            {
+              "effect": "2.34",
+              "lci": "0.43",
+              "uci": "12.87"
+            },
+            {
+              "effect": "2.14",
+              "lci": "0.68",
+              "uci": "6.73"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -4,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 5
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.93",
+              "lci": "0.83",
+              "uci": "1.04"
+            },
+            {
+              "effect": "0.84",
+              "lci": "0.75",
+              "uci": "0.93"
+            },
+            {
+              "effect": "1.84",
+              "lci": "0.74",
+              "uci": "4.56"
+            },
+            {
+              "effect": "1.30",
+              "lci": "0.87",
+              "uci": "1.93"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.89",
+              "lci": "0.76",
+              "uci": "1.05"
+            },
+            {
+              "effect": "0.82",
+              "lci": "0.69",
+              "uci": "0.97"
+            },
+            {
+              "effect": "1.17",
+              "lci": "0.28",
+              "uci": "5.00"
+            },
+            {
+              "effect": "1.06",
+              "lci": "0.52",
+              "uci": "2.16"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Toripalimab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.58",
+              "lci": "0.38",
+              "uci": "0.87"
+            },
+            {
+              "effect": "0.76",
+              "lci": "0.60",
+              "uci": "0.96"
+            },
+            {
+              "effect": "1.01",
+              "lci": "0.23",
+              "uci": "4.39"
+            },
+            {
+              "effect": "1.08",
+              "lci": "0.51",
+              "uci": "2.26"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab + entinostat + chemotherapy",
+          "values": [
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.49",
+              "lci": "0.22",
+              "uci": "1.12"
+            },
+            {
+              "effect": "5.14",
+              "lci": "0.70",
+              "uci": "37.94"
+            },
+            {
+              "effect": "2.72",
+              "lci": "0.90",
+              "uci": "8.19"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                null,
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                null,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Cobimetinib + atezolizumab + chemotherapy",
+          "values": [
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.76",
+              "lci": "0.33",
+              "uci": "9.46"
+            },
+            {
+              "effect": "3.11",
+              "lci": "1.04",
+              "uci": "9.33"
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                null,
+                null,
+                1,
+                -1
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -1,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -6,
+              "rank": 6
+            },
+            "interval": {
+              "directions": [
+                null,
+                null,
+                0,
+                -1
+              ],
+              "liteStd": -2,
+              "cobStd": 0,
+              "scobStd": -6,
+              "rank": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "zhang-2025-nsclc",
+      "name": "Zhang 2025 NSCLC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "RR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade >=3 AEs",
+          "statistic": "RR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Afatinib",
+          "values": [
+            {
+              "effect": "0.90",
+              "lci": "0.68",
+              "uci": "1.21"
+            },
+            {
+              "effect": "0.28",
+              "lci": "0.10",
+              "uci": "0.79"
+            },
+            {
+              "effect": "2.73",
+              "lci": "1.88",
+              "uci": "3.98"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.30",
+              "uci": "1.43"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Afatinib + Cetuximab",
+          "values": [
+            {
+              "effect": "1.31",
+              "lci": "0.47",
+              "uci": "3.64"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "2.77",
+              "lci": "1.52",
+              "uci": "5.02"
+            },
+            {
+              "effect": "0.81",
+              "lci": "0.16",
+              "uci": "4.00"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                null,
+                1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 13
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                1,
+                0
+              ],
+              "liteStd": 1.333333333333333,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 9
+            }
+          }
+        },
+        {
+          "name": "Apatinib + Gefitinib",
+          "values": [
+            {
+              "effect": "0.83",
+              "lci": "0.46",
+              "uci": "1.50"
+            },
+            {
+              "effect": "0.30",
+              "lci": "0.09",
+              "uci": "0.91"
+            },
+            {
+              "effect": "1.65",
+              "lci": "1.02",
+              "uci": "2.85"
+            },
+            {
+              "effect": "2.30",
+              "lci": "0.28",
+              "uci": "16.57"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Befotertinib",
+          "values": [
+            {
+              "effect": "1.16",
+              "lci": "0.58",
+              "uci": "2.28"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.44",
+              "lci": "0.72",
+              "uci": "2.85"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                -1,
+                null,
+                1,
+                null
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -1,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -6,
+              "rank": 15
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Cetuximab + chemotherapy",
+          "values": [
+            {
+              "effect": "0.92",
+              "lci": "0.70",
+              "uci": "1.19"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.05",
+              "lci": "0.64",
+              "uci": "1.71"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                null,
+                1,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Erlotinib",
+          "values": [
+            {
+              "effect": "1.29",
+              "lci": "0.80",
+              "uci": "2.12"
+            },
+            {
+              "effect": "0.25",
+              "lci": "0.12",
+              "uci": "0.54"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                null,
+                null
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -1,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -6,
+              "rank": 15
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                null,
+                null
+              ],
+              "liteStd": 2,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 6
+            }
+          }
+        },
+        {
+          "name": "Erlotinib + Bevacizumab",
+          "values": [
+            {
+              "effect": "1.54",
+              "lci": "0.80",
+              "uci": "3.00"
+            },
+            {
+              "effect": "0.18",
+              "lci": "0.06",
+              "uci": "0.53"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                null,
+                null
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -1,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -6,
+              "rank": 15
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                null,
+                null
+              ],
+              "liteStd": 2,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 6
+            }
+          }
+        },
+        {
+          "name": "Erlotinib + chemotherapy",
+          "values": [
+            {
+              "effect": "0.99",
+              "lci": "0.42",
+              "uci": "2.28"
+            },
+            {
+              "effect": "0.21",
+              "lci": "0.06",
+              "uci": "0.64"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                1,
+                null,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                null,
+                null
+              ],
+              "liteStd": 2,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 6
+            }
+          }
+        },
+        {
+          "name": "Gefitinib",
+          "values": [
+            {
+              "effect": "0.76",
+              "lci": "0.57",
+              "uci": "1.00"
+            },
+            {
+              "effect": "0.43",
+              "lci": "0.23",
+              "uci": "0.71"
+            },
+            {
+              "effect": "1.58",
+              "lci": "1.24",
+              "uci": "2.12"
+            },
+            {
+              "effect": "1.01",
+              "lci": "0.21",
+              "uci": "4.45"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Gefitinib + chemotherapy",
+          "values": [
+            {
+              "effect": "0.75",
+              "lci": "0.47",
+              "uci": "1.22"
+            },
+            {
+              "effect": "0.27",
+              "lci": "0.13",
+              "uci": "0.58"
+            },
+            {
+              "effect": "1.86",
+              "lci": "1.35",
+              "uci": "2.70"
+            },
+            {
+              "effect": "1.76",
+              "lci": "0.42",
+              "uci": "7.77"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Gefitinib + Olaparib",
+          "values": [
+            {
+              "effect": "0.92",
+              "lci": "0.51",
+              "uci": "1.65"
+            },
+            {
+              "effect": "0.31",
+              "lci": "0.09",
+              "uci": "0.95"
+            },
+            {
+              "effect": "1.66",
+              "lci": "1.00",
+              "uci": "2.89"
+            },
+            {
+              "effect": "1.02",
+              "lci": "0.13",
+              "uci": "7.32"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "Icotinib",
+          "values": [
+            {
+              "effect": "0.99",
+              "lci": "0.62",
+              "uci": "1.57"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.49",
+              "lci": "0.87",
+              "uci": "2.56"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                null,
+                1,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Icotinib + chemotherapy",
+          "values": [
+            {
+              "effect": "0.80",
+              "lci": "0.41",
+              "uci": "1.60"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.81",
+              "lci": "0.89",
+              "uci": "3.66"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 2,
+            "point": {
+              "directions": [
+                1,
+                null,
+                1,
+                null
+              ],
+              "lite": 2,
+              "cob": 1,
+              "scob": 1,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Lazertinib",
+          "values": [
+            {
+              "effect": "0.56",
+              "lci": "0.32",
+              "uci": "0.99"
+            },
+            {
+              "effect": "0.19",
+              "lci": "0.06",
+              "uci": "0.58"
+            },
+            {
+              "effect": "1.57",
+              "lci": "0.97",
+              "uci": "2.72"
+            },
+            {
+              "effect": "0.95",
+              "lci": "0.11",
+              "uci": "7.00"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Naquotinib",
+          "values": [
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.41",
+              "lci": "0.11",
+              "uci": "1.49"
+            },
+            {
+              "effect": "1.08",
+              "lci": "0.65",
+              "uci": "1.91"
+            },
+            {
+              "effect": "1.27",
+              "lci": "0.16",
+              "uci": "9.16"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                null,
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 13
+            },
+            "interval": {
+              "directions": [
+                null,
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 13
+            }
+          }
+        },
+        {
+          "name": "Osimertinib",
+          "values": [
+            {
+              "effect": "0.81",
+              "lci": "0.42",
+              "uci": "1.58"
+            },
+            {
+              "effect": "0.12",
+              "lci": "0.03",
+              "uci": "0.41"
+            },
+            {
+              "effect": "1.61",
+              "lci": "1.00",
+              "uci": "2.79"
+            },
+            {
+              "effect": "0.76",
+              "lci": "0.09",
+              "uci": "5.47"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "Osimertinib + Bevacizumab",
+          "values": [
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.14",
+              "lci": "0.03",
+              "uci": "0.74"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 1,
+            "point": {
+              "directions": [
+                null,
+                1,
+                null,
+                null
+              ],
+              "lite": 1,
+              "cob": 0,
+              "scob": 0,
+              "liteStd": 4,
+              "cobStd": null,
+              "scobStd": null,
+              "rank": null
+            },
+            "interval": {
+              "directions": [
+                null,
+                1,
+                null,
+                null
+              ],
+              "liteStd": 4,
+              "cobStd": null,
+              "scobStd": null,
+              "rank": null
+            }
+          }
+        },
+        {
+          "name": "Osimertinib + chemotherapy",
+          "values": [
+            {
+              "effect": "0.73",
+              "lci": "0.33",
+              "uci": "1.63"
+            },
+            {
+              "effect": "0.07",
+              "lci": "0.01",
+              "uci": "0.37"
+            },
+            {
+              "effect": "1.79",
+              "lci": "0.95",
+              "uci": "3.62"
+            },
+            {
+              "effect": "1.79",
+              "lci": "0.15",
+              "uci": "18.95"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 10
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "jin-2020-hnscc",
+      "name": "Jin 2020 HNSCC",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade >=3 AEs",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "TPEx (cisplatin + cetuximab + taxane)",
+          "values": [
+            {
+              "effect": "0.84",
+              "lci": "0.72",
+              "uci": "0.98"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.48",
+              "uci": "0.89"
+            },
+            {
+              "effect": "0.64",
+              "lci": "0.48",
+              "uci": "0.85"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Platinum + cetuximab",
+          "values": [
+            {
+              "effect": "1.09",
+              "lci": "0.78",
+              "uci": "1.51"
+            },
+            {
+              "effect": "0.66",
+              "lci": "0.42",
+              "uci": "1.03"
+            },
+            {
+              "effect": "0.68",
+              "lci": "0.40",
+              "uci": "1.14"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Patritumab + cetuximab + platinum",
+          "values": [
+            {
+              "effect": "1.42",
+              "lci": "0.60",
+              "uci": "3.36"
+            },
+            {
+              "effect": "0.65",
+              "lci": "0.32",
+              "uci": "1.32"
+            },
+            {
+              "effect": "0.94",
+              "lci": "0.41",
+              "uci": "2.17"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab + cisplatin + fluorouracil",
+          "values": [
+            {
+              "effect": "0.77",
+              "lci": "0.66",
+              "uci": "0.89"
+            },
+            {
+              "effect": "0.92",
+              "lci": "0.78",
+              "uci": "1.09"
+            },
+            {
+              "effect": "1.02",
+              "lci": "0.80",
+              "uci": "1.31"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                1,
+                0,
+                0
+              ],
+              "liteStd": 1,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "EXTREME + docetaxel",
+          "values": [
+            {
+              "effect": "1.29",
+              "lci": "0.86",
+              "uci": "1.92"
+            },
+            {
+              "effect": "0.97",
+              "lci": "0.72",
+              "uci": "1.31"
+            },
+            {
+              "effect": "1.45",
+              "lci": "0.71",
+              "uci": "2.99"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                1,
+                -1
+              ],
+              "lite": -1,
+              "cob": -1,
+              "scob": -3,
+              "liteStd": -1,
+              "cobStd": -1,
+              "scobStd": -3,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "CetuGEX + cisplatin + fluorouracil",
+          "values": [
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "1.00",
+              "lci": "0.73",
+              "uci": "1.36"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 1,
+            "point": {
+              "directions": [
+                null,
+                0,
+                null
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": 0,
+              "liteStd": 0,
+              "cobStd": null,
+              "scobStd": null,
+              "rank": null
+            },
+            "interval": {
+              "directions": [
+                null,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": null,
+              "scobStd": null,
+              "rank": null
+            }
+          }
+        },
+        {
+          "name": "EXTREME + motolimod",
+          "values": [
+            {
+              "effect": "0.95",
+              "lci": "0.52",
+              "uci": "1.75"
+            },
+            {
+              "effect": "0.99",
+              "lci": "0.54",
+              "uci": "1.82"
+            },
+            {
+              "effect": "0.99",
+              "lci": "0.57",
+              "uci": "1.74"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "EXTREME + cilengitide once weekly",
+          "values": [
+            {
+              "effect": "0.94",
+              "lci": "0.61",
+              "uci": "1.45"
+            },
+            {
+              "effect": "1.03",
+              "lci": "0.65",
+              "uci": "1.63"
+            },
+            {
+              "effect": "0.95",
+              "lci": "0.54",
+              "uci": "1.65"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Panitumumab + cisplatin + docetaxel",
+          "values": [
+            {
+              "effect": "1.43",
+              "lci": "0.85",
+              "uci": "2.42"
+            },
+            {
+              "effect": "1.15",
+              "lci": "0.80",
+              "uci": "1.66"
+            },
+            {
+              "effect": "1.35",
+              "lci": "0.72",
+              "uci": "2.52"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -3,
+              "cob": -3,
+              "scob": -3,
+              "liteStd": -3,
+              "cobStd": -3,
+              "scobStd": -3,
+              "rank": 10
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Bevacizumab + cisplatin + docetaxel",
+          "values": [
+            {
+              "effect": "1.13",
+              "lci": "0.89",
+              "uci": "1.44"
+            },
+            {
+              "effect": "1.28",
+              "lci": "1.07",
+              "uci": "1.53"
+            },
+            {
+              "effect": "1.19",
+              "lci": "0.80",
+              "uci": "1.75"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -3,
+              "cob": -3,
+              "scob": -3,
+              "liteStd": -3,
+              "cobStd": -3,
+              "scobStd": -3,
+              "rank": 10
+            },
+            "interval": {
+              "directions": [
+                0,
+                -1,
+                0
+              ],
+              "liteStd": -1,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 11
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.72",
+              "uci": "1.00"
+            },
+            {
+              "effect": "1.34",
+              "lci": "1.06",
+              "uci": "1.69"
+            },
+            {
+              "effect": "0.66",
+              "lci": "0.51",
+              "uci": "0.85"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1,
+              "cobStd": 1,
+              "scobStd": -1,
+              "rank": 3
+            },
+            "interval": {
+              "directions": [
+                0,
+                -1,
+                1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "EXTREME + cilengitide twice weekly",
+          "values": [
+            {
+              "effect": "1.04",
+              "lci": "0.64",
+              "uci": "1.69"
+            },
+            {
+              "effect": "1.55",
+              "lci": "0.75",
+              "uci": "3.18"
+            },
+            {
+              "effect": "1.07",
+              "lci": "0.62",
+              "uci": "1.86"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -3,
+              "cob": -3,
+              "scob": -3,
+              "liteStd": -3,
+              "cobStd": -3,
+              "scobStd": -3,
+              "rank": 10
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Panitumumab + cisplatin + fluorouracil",
+          "values": [
+            {
+              "effect": "1.13",
+              "lci": "0.91",
+              "uci": "1.40"
+            },
+            {
+              "effect": "1.42",
+              "lci": "1.21",
+              "uci": "1.68"
+            },
+            {
+              "effect": "1.01",
+              "lci": "0.71",
+              "uci": "1.43"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1
+              ],
+              "lite": -3,
+              "cob": -3,
+              "scob": -3,
+              "liteStd": -3,
+              "cobStd": -3,
+              "scobStd": -3,
+              "rank": 10
+            },
+            "interval": {
+              "directions": [
+                0,
+                -1,
+                0
+              ],
+              "liteStd": -1,
+              "cobStd": 0,
+              "scobStd": -2,
+              "rank": 11
+            }
+          }
+        },
+        {
+          "name": "Platinum-based chemotherapy",
+          "values": [
+            {
+              "effect": "1.30",
+              "lci": "1.13",
+              "uci": "1.50"
+            },
+            {
+              "effect": "1.83",
+              "lci": "1.65",
+              "uci": "2.02"
+            },
+            {
+              "effect": "0.96",
+              "lci": "0.75",
+              "uci": "1.24"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1
+              ],
+              "lite": -1,
+              "cob": -1,
+              "scob": -3,
+              "liteStd": -1,
+              "cobStd": -1,
+              "scobStd": -3,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                -1,
+                -1,
+                0
+              ],
+              "liteStd": -2,
+              "cobStd": -1,
+              "scobStd": -3,
+              "rank": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "xie-2025-urothelial",
+      "name": "Xie 2025 Urothelial",
+      "comparator": "Common reference comparator (see source NMA)",
+      "minimumEndpoints": 2,
+      "applyWeights": false,
+      "endpoints": [
+        {
+          "name": "OS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "PFS",
+          "statistic": "HR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "ORR",
+          "statistic": "OR",
+          "favorable": "Higher",
+          "nullValue": "1",
+          "weight": ""
+        },
+        {
+          "name": "Grade >=3 TRAEs",
+          "statistic": "OR",
+          "favorable": "Lower",
+          "nullValue": "1",
+          "weight": ""
+        }
+      ],
+      "interventions": [
+        {
+          "name": "Enfortumab vedotin + pembrolizumab",
+          "values": [
+            {
+              "effect": "0.47",
+              "lci": "0.38",
+              "uci": "0.58"
+            },
+            {
+              "effect": "0.45",
+              "lci": "0.38",
+              "uci": "0.54"
+            },
+            {
+              "effect": "2.60",
+              "lci": "1.96",
+              "uci": "3.38"
+            },
+            {
+              "effect": "0.60",
+              "lci": "0.45",
+              "uci": "0.78"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "lite": 4,
+              "cob": 6,
+              "scob": 6,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            }
+          }
+        },
+        {
+          "name": "Platinum chemotherapy then avelumab maintenance",
+          "values": [
+            {
+              "effect": "0.76",
+              "lci": "0.63",
+              "uci": "0.91"
+            },
+            {
+              "effect": "0.54",
+              "lci": "0.46",
+              "uci": "0.64"
+            },
+            {
+              "effect": "4.29",
+              "lci": "2.25",
+              "uci": "7.73"
+            },
+            {
+              "effect": "475.30",
+              "lci": "21.67",
+              "uci": "2857.15"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 3
+            }
+          }
+        },
+        {
+          "name": "Nivolumab + gemcitabine-cisplatin",
+          "values": [
+            {
+              "effect": "0.78",
+              "lci": "0.63",
+              "uci": "0.96"
+            },
+            {
+              "effect": "0.72",
+              "lci": "0.59",
+              "uci": "0.88"
+            },
+            {
+              "effect": "1.82",
+              "lci": "1.30",
+              "uci": "2.48"
+            },
+            {
+              "effect": "1.60",
+              "lci": "0.88",
+              "uci": "2.72"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 3,
+              "cobStd": 3,
+              "scobStd": 3,
+              "rank": 2
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab + platinum chemotherapy",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.73",
+              "uci": "0.99"
+            },
+            {
+              "effect": "0.82",
+              "lci": "0.70",
+              "uci": "0.96"
+            },
+            {
+              "effect": "1.15",
+              "lci": "0.87",
+              "uci": "1.49"
+            },
+            {
+              "effect": "1.10",
+              "lci": "0.76",
+              "uci": "1.55"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Durvalumab + tremelimumab",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.71",
+              "uci": "1.01"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.60",
+              "lci": "0.43",
+              "uci": "0.80"
+            },
+            {
+              "effect": "0.26",
+              "lci": "0.18",
+              "uci": "0.35"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                null,
+                -1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                -1,
+                1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "Paclitaxel + gemcitabine-cisplatin",
+          "values": [
+            {
+              "effect": "0.85",
+              "lci": "0.71",
+              "uci": "1.01"
+            },
+            {
+              "effect": "0.87",
+              "lci": "0.74",
+              "uci": "1.03"
+            },
+            {
+              "effect": "1.63",
+              "lci": "1.17",
+              "uci": "2.20"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                null
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                1,
+                null
+              ],
+              "liteStd": 1.333333333333333,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 6
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab + platinum chemotherapy",
+          "values": [
+            {
+              "effect": "0.86",
+              "lci": "0.72",
+              "uci": "1.02"
+            },
+            {
+              "effect": "0.78",
+              "lci": "0.65",
+              "uci": "0.93"
+            },
+            {
+              "effect": "1.50",
+              "lci": "1.10",
+              "uci": "2.00"
+            },
+            {
+              "effect": "1.30",
+              "lci": "0.92",
+              "uci": "1.79"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                -1
+              ],
+              "lite": 2,
+              "cob": 3,
+              "scob": 0,
+              "liteStd": 2,
+              "cobStd": 3,
+              "scobStd": 0,
+              "rank": 4
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "liteStd": 2,
+              "cobStd": 1,
+              "scobStd": 1,
+              "rank": 4
+            }
+          }
+        },
+        {
+          "name": "Bevacizumab + gemcitabine-cisplatin",
+          "values": [
+            {
+              "effect": "0.87",
+              "lci": "0.72",
+              "uci": "1.05"
+            },
+            {
+              "effect": "0.77",
+              "lci": "0.63",
+              "uci": "0.95"
+            },
+            {
+              "effect": "1.23",
+              "lci": "0.85",
+              "uci": "1.72"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                1,
+                null
+              ],
+              "lite": 3,
+              "cob": 3,
+              "scob": 3,
+              "liteStd": 4,
+              "cobStd": 6,
+              "scobStd": 6,
+              "rank": 1
+            },
+            "interval": {
+              "directions": [
+                0,
+                1,
+                0,
+                null
+              ],
+              "liteStd": 1.333333333333333,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 6
+            }
+          }
+        },
+        {
+          "name": "MVAC",
+          "values": [
+            {
+              "effect": "0.92",
+              "lci": "0.74",
+              "uci": "1.13"
+            },
+            {
+              "effect": "0.92",
+              "lci": "0.75",
+              "uci": "1.13"
+            },
+            {
+              "effect": "0.64",
+              "lci": "0.34",
+              "uci": "1.10"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                1,
+                -1,
+                null
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 8
+            }
+          }
+        },
+        {
+          "name": "Pembrolizumab",
+          "values": [
+            {
+              "effect": "0.92",
+              "lci": "0.77",
+              "uci": "1.11"
+            },
+            {
+              "effect": "1.32",
+              "lci": "1.09",
+              "uci": "1.59"
+            },
+            {
+              "effect": "0.54",
+              "lci": "0.39",
+              "uci": "0.73"
+            },
+            {
+              "effect": "0.09",
+              "lci": "0.06",
+              "uci": "0.13"
+            }
+          ],
+          "expected": {
+            "k": 4,
+            "point": {
+              "directions": [
+                1,
+                -1,
+                -1,
+                1
+              ],
+              "lite": 0,
+              "cob": 0,
+              "scob": -4,
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 12
+            },
+            "interval": {
+              "directions": [
+                0,
+                -1,
+                -1,
+                1
+              ],
+              "liteStd": -1,
+              "cobStd": -1,
+              "scobStd": -5,
+              "rank": 14
+            }
+          }
+        },
+        {
+          "name": "Atezolizumab",
+          "values": [
+            {
+              "effect": "0.98",
+              "lci": "0.82",
+              "uci": "1.17"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.40",
+              "lci": "0.29",
+              "uci": "0.54"
+            },
+            {
+              "effect": "0.04",
+              "lci": "0.03",
+              "uci": "0.06"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                null,
+                -1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                -1,
+                1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "Durvalumab",
+          "values": [
+            {
+              "effect": "0.99",
+              "lci": "0.83",
+              "uci": "1.18"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            },
+            {
+              "effect": "0.36",
+              "lci": "0.26",
+              "uci": "0.49"
+            },
+            {
+              "effect": "0.11",
+              "lci": "0.07",
+              "uci": "0.16"
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                1,
+                null,
+                -1,
+                1
+              ],
+              "lite": 1,
+              "cob": 1,
+              "scob": -1,
+              "liteStd": 1.333333333333333,
+              "cobStd": 2,
+              "scobStd": -2,
+              "rank": 8
+            },
+            "interval": {
+              "directions": [
+                0,
+                null,
+                -1,
+                1
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 10
+            }
+          }
+        },
+        {
+          "name": "High-dose-intensity MVAC",
+          "values": [
+            {
+              "effect": "1.21",
+              "lci": "0.86",
+              "uci": "1.69"
+            },
+            {
+              "effect": "1.26",
+              "lci": "0.90",
+              "uci": "1.76"
+            },
+            {
+              "effect": "1.07",
+              "lci": "0.46",
+              "uci": "2.13"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                1,
+                null
+              ],
+              "lite": -1,
+              "cob": -1,
+              "scob": -3,
+              "liteStd": -1.333333333333333,
+              "cobStd": -2,
+              "scobStd": -6,
+              "rank": 13
+            },
+            "interval": {
+              "directions": [
+                0,
+                0,
+                0,
+                null
+              ],
+              "liteStd": 0,
+              "cobStd": 0,
+              "scobStd": 0,
+              "rank": 8
+            }
+          }
+        },
+        {
+          "name": "Larotaxel + cisplatin",
+          "values": [
+            {
+              "effect": "1.21",
+              "lci": "0.83",
+              "uci": "1.76"
+            },
+            {
+              "effect": "1.67",
+              "lci": "1.24",
+              "uci": "2.25"
+            },
+            {
+              "effect": "0.63",
+              "lci": "0.33",
+              "uci": "1.09"
+            },
+            {
+              "effect": "",
+              "lci": "",
+              "uci": ""
+            }
+          ],
+          "expected": {
+            "k": 3,
+            "point": {
+              "directions": [
+                -1,
+                -1,
+                -1,
+                null
+              ],
+              "lite": -3,
+              "cob": -3,
+              "scob": -3,
+              "liteStd": -4,
+              "cobStd": -6,
+              "scobStd": -6,
+              "rank": 14
+            },
+            "interval": {
+              "directions": [
+                0,
+                -1,
+                0,
+                null
+              ],
+              "liteStd": -1.333333333333333,
+              "cobStd": 0,
+              "scobStd": -4,
+              "rank": 13
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

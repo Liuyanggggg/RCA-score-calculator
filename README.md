@@ -1,81 +1,95 @@
 # RCA Score Calculator
 
-Response-Consistency-Across-endpoints (RCA) scoring tools for network meta-analysis (NMA).
+Response-Consistency-Across-endpoints (RCA) scoring tools for network meta-analysis (NMA), including updated Excel workbooks and a complete browser-based calculator.
 
 ![Overview](overview.png)
 
-## What is this?
+## What is included
 
-Network meta-analysis ranks interventions one outcome at a time. The RCA score family converts standard single-endpoint NMA results into **one overall cross-endpoint ranking**, so that interventions whose effects point consistently in favorable directions can be screened quickly and transparently.
+- **`RCA_tool_Effect.xlsx`** — point-estimate coding relative to the statistical null.
+- **`RCA_tool_95CI.xlsx`** — 95% interval-exclusion coding; an interval including or touching the null is coded 0.
+- **`Supporting_Information_S3_v2_10NMAs.xlsx`** — published application data, scores, ranks and sensitivity analyses used for regression verification.
+- **`website/`** — complete source, locked dependencies, tests and production build of the local-first RCA website.
 
-Each endpoint is coded as:
+Each observed endpoint is coded as:
 
 | Code | Meaning |
 |------|---------|
 | +1 | favorable |
-| 0 | neutral / unreported |
+| 0 | neutral or uncertain; missing endpoints are left blank and are not coded as 0 |
 | −1 | unfavorable |
 
-Three bounded scores are then computed for each intervention:
+Three bounded scores summarize each intervention:
 
-| Score | Definition | Range |
-|-------|------------|-------|
-| `RCA_lite` | directional net score: sum of directions | −n … +n |
-| `RCA_cob` | concordance balance: (# of `++` pairs) − (# of `−−` pairs) | −C(n,2) … +C(n,2) |
-| `RCA_scob` | strict concordance: `RCA_cob` − pairs containing any unfavorable direction | −C(n,2) … +C(n,2) |
+| Score | Definition |
+|-------|------------|
+| `RCA_lite` | directional net score: sum of directions |
+| `RCA_cob` | concordance balance: favorable concordant pairs minus unfavorable concordant pairs |
+| `RCA_scob` | strict concordance: `RCA_cob` minus pairs containing exactly one unfavorable direction |
 
-Missing endpoints are handled by computing scores over available endpoints and standardizing to the full *n*-endpoint scale (asterisked scores). Final ranking uses **standardized `RCA_cob`**, with ties resolved by standardized `RCA_scob`, then `RCA_lite`.
+Scores use observed endpoints and are standardized to the full endpoint scale. Ranking uses standardized `RCA_cob`, then standardized `RCA_scob`, then standardized `RCA_lite`, all descending. Exact ties share a rank.
 
-## Two versions
+## Browser calculator
 
-| File | Direction coding rule | Use when |
-|------|----------------------|----------|
-| `RCA_tool_Effect.xlsx` | point estimate relative to the null | you want a summary of where the evidence points, keeping all interventions distinguishable |
-| `RCA_tool_95CI.xlsx` | 95% CI must exclude the null before ±1 is assigned | you want to keep only "confident" directions; imprecise estimates drift to 0 |
+The website supports manual entry, Excel import, both coding rules, side-by-side comparisons, per-intervention calculation audits, browser saves, complete JSON reload, and Excel/JSON export. It includes ten published example networks with 117 regimens. All computation is performed locally in the browser without accounts or a backend.
 
-Both files have identical structure. Running both on the same data is a useful sensitivity analysis: if the ranking changes between coding rules, report it.
+### Run from source
 
-## Quick start
+```bash
+cd website
+npm ci
+npm run dev
+```
 
-No installation, no macros — just Microsoft Excel (2016 or later, or Microsoft 365).
+### Serve the delivered production build
 
-1. **`1-Setup`** — define your comparator, the minimum number of endpoints required (m, default 2), up to **20 endpoints** (name, favorable direction, null value, optional weight, statistic) and up to **50 interventions**.
-2. **`2-Input_NMA_Data`** — paste the effect estimate and 95% CI for every intervention × endpoint from your NMA.
-3. **`3-Direction_Matrix`** — automatic. Codes each value to +1 / 0 / −1 according to your setup rules.
-4. **`4-RCA_Results`** — read off `k_t`, `M_t`, all three raw and standardized scores, and the final rank.
+```bash
+cd website
+python3 -m http.server 8080 --directory dist
+```
 
+Open `http://127.0.0.1:8080`. The `website/dist/` directory can also be published directly on any static web host.
 
-## Weights (optional)
+A GitHub Pages workflow is included at `.github/workflows/deploy.yml`. To use it, enable **GitHub Pages → Build and deployment → GitHub Actions** in the repository settings. The workflow builds and deploys `website/dist/` after pushes to `main`.
 
-On `1-Setup`, **Apply weights?** is a Yes/No choice (default **No** = equal weights). Set it to **Yes** only if you want to use the Optional Weight column; authors choose the `w_i` values. Blank weights default to 1; negative weights are treated as 0. Weighted `RCA_lite` uses `w_i * d_i` and pairwise scores use `w_i * w_j`. Standardized pairwise scores are multiplied by `W / S_t`. With Apply weights? = No, results match the unweighted scores even if the weight column has been filled.
+See [website/README.md](website/README.md) for full import formats, reproducibility, testing and deployment instructions.
 
-## Worked example (from the paper)
+## Excel quick start
 
-Three hypothetical interventions (A–C) versus a common comparator; lower is favorable for OS/PFS/AEs, higher for ORR:
+No macros are required.
 
-| | OS (HR) | PFS (HR) | ORR (OR) | AEs (OR) | RCA_lite | RCA_cob | RCA_scob | RCA_cob* | Rank |
-|--|---------|----------|----------|----------|----------|---------|----------|----------|------|
-| A | 0.47 | NA | 2.70 | 1.23 | 1 | 1 | −1 | 2 | **1** |
-| C | 1.00 | 1.00 | NA | 0.36 | 1 | 0 | 0 | 0 | **2** |
-| B | 1.13 | 1.19 | 0.54 | 0.63 | −2 | −3 | −6 | −3 | **3** |
+1. **`1-Setup`** — define the comparator, minimum observed endpoints `m` (default 2), up to 20 endpoints and up to 50 interventions.
+2. **`2-Input_NMA_Data`** — enter the effect estimate and 95% interval for every available intervention–endpoint pair. Leave missing data blank.
+3. **`3-Direction_Matrix`** — review the automatic +1/0/−1 coding.
+4. **`4-RCA_Results`** — read `k_t`, `M_t`, raw and standardized scores, eligibility status and ranks.
 
-(Directions coded from point estimates; `*` = standardized to the 4-endpoint scale.)
+Numeric zero is observed, not missing. Point estimates equal to the null are coded 0. Interval limits must satisfy `LCI <= effect <= UCI`; nonzero directions require strict exclusion of the null. Coverage below `m`, invalid inputs and non-positive observed weight denominators block scores and ranks.
 
-## Limitations (v1.1)
+## Optional weights
 
-1. RCA discards effect-size magnitude in its simplest form.
-2. Results depend on prespecified coding rules.
-3. Rankings may be unstable when few endpoints are available.
-4. Weighting is optional: set Apply weights? to Yes to use author-specified w_i, or leave it as No for equal weights.
-5. RCA is a **first-line screening tool**, not a definitive treatment ranking.
+Set **Apply weights?** to **Yes** only when author-specified endpoint weights are intended. Blank weights equal 1. Weighted `RCA_lite` uses `w_i*d_i`; pairwise scores use `w_i*w_j`. Standardization uses total/observed weight denominators.
+
+**Negative or non-numeric weights are invalid**, including when weighting is switched off, matching the latest revised manuscript and workbook validation. This supersedes the older repository description that treated negative weights as zero.
+
+## Verification
+
+The website calculation engine is independent of the interface. The test suite covers missing versus numeric zero, null-touching intervals, invalid and incomplete intervals, insufficient coverage, weights, standardization and exact ties.
+
+Regression checks cover all 10 published networks, 117 regimens, 434 raw endpoint cells, both coding rules and 230 eligible published ranks. See [website/TEST_REPORT.md](website/TEST_REPORT.md) for the actual test report and [website/RULES_AND_CONFLICTS.md](website/RULES_AND_CONFLICTS.md) for source-rule provenance and documented version differences.
+
+## Limitations
+
+- RCA discards effect-size magnitude and interval width.
+- Results depend on prespecified coding and coverage rules.
+- Standardization cannot restore missing evidence.
+- The calculators implement statistical-null coding, not separate clinical thresholds.
+- RCA is a first-line screening tool, not a definitive benefit–risk assessment or patient-level treatment recommendation.
 
 ## Citation
 
-> Liu Y, Song Y, Du Y, Qin C, Xu T. Response-consistency-across-endpoints (RCA) scores: a parsimonious approach to multi-outcome treatment ranking in network meta-analysis. *Medicine Advances* (in press, 2026).
+> Liu Y, Song Y, Du Y, Qin C, Xu T. Response-consistency-across-endpoints (RCA) scores: a parsimonious screening summary for multi-outcome comparisons in network meta-analysis. *Medicine Advances* (in press, 2026).
 
-If you use the tool, please also cite the version:
-
-> RCA Score Calculator v1.0 (2026). https://github.com/Liuyanggggg/RCA-score-calculator
+If you use the tools, please also cite this repository and its release version.
 
 ## License
 

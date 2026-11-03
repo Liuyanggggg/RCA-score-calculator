@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "rca-analysis/1.0",
+  "appVersion": "1.0.0",
+  "engineVersion": "1.0.0",
+  "name": "Yanagisawa 2024 mRCC",
+  "comparator": "Common reference comparator (see source NMA)",
+  "minimumEndpoints": 2,
+  "applyWeights": false,
+  "endpoints": [
+    {
+      "id": "E1",
+      "name": "OS",
+      "favorable": "Lower",
+      "nullValue": "1",
+      "weight": "",
+      "statistic": "HR"
+    },
+    {
+      "id": "E2",
+      "name": "PFS",
+      "favorable": "Lower",
+      "nullValue": "1",
+      "weight": "",
+      "statistic": "HR"
+    },
+    {
+      "id": "E3",
+      "name": "ORR",
+      "favorable": "Higher",
+      "nullValue": "1",
+      "weight": "",
+      "statistic": "OR"
+    },
+    {
+      "id": "E4",
+      "name": "Severe TRAE",
+      "favorable": "Lower",
+      "nullValue": "1",
+      "weight": "",
+      "statistic": "OR"
+    }
+  ],
+  "interventions": [
+    {
+      "id": "T1",
+      "name": "Nivolumab+ipilimumab",
+      "values": [
+        {
+          "effect": "0.72",
+          "lci": "0.62",
+          "uci": "0.85"
+        },
+        {
+          "effect": "0.86",
+          "lci": "0.73",
+          "uci": "1.01"
+        },
+        {
+          "effect": "1.35",
+          "lci": "1.05",
+          "uci": "1.73"
+        },
+        {
+          "effect": "0.51",
+          "lci": "0.40",
+          "uci": "0.66"
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "name": "Avelumab+axitinib",
+      "values": [
+        {
+          "effect": "0.79",
+          "lci": "0.64",
+          "uci": "0.97"
+        },
+        {
+          "effect": "0.67",
+          "lci": "0.57",
+          "uci": "0.79"
+        },
+        {
+          "effect": "3.13",
+          "lci": "2.37",
+          "uci": "4.12"
+        },
+        {
+          "effect": "1.25",
+          "lci": "0.90",
+          "uci": "1.74"
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "Pembrolizumab+axitinib",
+      "values": [
+        {
+          "effect": "0.84",
+          "lci": "0.71",
+          "uci": "0.99"
+        },
+        {
+          "effect": "0.69",
+          "lci": "0.59",
+          "uci": "0.81"
+        },
+        {
+          "effect": "2.35",
+          "lci": "1.79",
+          "uci": "3.09"
+        },
+        {
+          "effect": "1.21",
+          "lci": "0.91",
+          "uci": "1.61"
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "Nivolumab+cabozantinib",
+      "values": [
+        {
+          "effect": "0.70",
+          "lci": "0.56",
+          "uci": "0.87"
+        },
+        {
+          "effect": "0.58",
+          "lci": "0.48",
+          "uci": "0.71"
+        },
+        {
+          "effect": "3.18",
+          "lci": "2.30",
+          "uci": "4.40"
+        },
+        {
+          "effect": "1.65",
+          "lci": "1.20",
+          "uci": "2.28"
+        }
+      ]
+    },
+    {
+      "id": "T5",
+      "name": "Pembrolizumab+lenvatinib",
+      "values": [
+        {
+          "effect": "0.79",
+          "lci": "0.63",
+          "uci": "0.99"
+        },
+        {
+          "effect": "0.47",
+          "lci": "0.38",
+          "uci": "0.57"
+        },
+        {
+          "effect": "4.28",
+          "lci": "3.12",
+          "uci": "5.86"
+        },
+        {
+          "effect": "1.89",
+          "lci": "1.37",
+          "uci": "2.61"
+        }
+      ]
+    }
+  ],
+  "reproducibility": {
+    "canonicalSha256": "96037299bb5d90b05130f356797a7b931d69f6f06c7ea6a7e7c040e3aa249016",
+    "canonicalization": "UTF-8 JSON with recursively sorted object keys; array order preserved",
+    "software": {
+      "application": "1.0.0",
+      "engine": "1.0.0",
+      "schema": "rca-analysis/1.0",
+      "excel": "OOXML ZIP/XML 1.0"
+    },
+    "calculation": "calculateAnalysis; point and interval rules computed independently from raw input strings"
+  }
+}

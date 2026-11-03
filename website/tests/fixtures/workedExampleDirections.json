@@ -1,0 +1,344 @@
+[
+  {
+    "name": "ICI+Chemo",
+    "rule": "pt",
+    "directions": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 4,
+    "cob": 6,
+    "scob": 6,
+    "liteStd": 4,
+    "cobStd": 6,
+    "scobStd": 6,
+    "rank": 1
+  },
+  {
+    "name": "ICI+ADC",
+    "rule": "pt",
+    "directions": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 4,
+    "cob": 6,
+    "scob": 6,
+    "liteStd": 4,
+    "cobStd": 6,
+    "scobStd": 6,
+    "rank": 1
+  },
+  {
+    "name": "ADC",
+    "rule": "pt",
+    "directions": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 4,
+    "cob": 6,
+    "scob": 6,
+    "liteStd": 4,
+    "cobStd": 6,
+    "scobStd": 6,
+    "rank": 1
+  },
+  {
+    "name": "Chemo+Chemo",
+    "rule": "pt",
+    "directions": [
+      1,
+      1,
+      1,
+      null
+    ],
+    "k": 3,
+    "pairs": 3,
+    "lite": 3,
+    "cob": 3,
+    "scob": 3,
+    "liteStd": 4,
+    "cobStd": 6,
+    "scobStd": 6,
+    "rank": 1
+  },
+  {
+    "name": "ICI+ICI",
+    "rule": "pt",
+    "directions": [
+      1,
+      null,
+      -1,
+      1
+    ],
+    "k": 3,
+    "pairs": 3,
+    "lite": 1,
+    "cob": 1,
+    "scob": -1,
+    "liteStd": 1.3333333333333333,
+    "cobStd": 2,
+    "scobStd": -2,
+    "rank": 5
+  },
+  {
+    "name": "ICI+PARPi",
+    "rule": "pt",
+    "directions": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 0,
+    "cob": 0,
+    "scob": -4,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": -4,
+    "rank": 6
+  },
+  {
+    "name": "ICI",
+    "rule": "pt",
+    "directions": [
+      0,
+      -1,
+      -1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": -1,
+    "cob": -1,
+    "scob": -5,
+    "liteStd": -1,
+    "cobStd": -1,
+    "scobStd": -5,
+    "rank": 7
+  },
+  {
+    "name": "ICI+TKI",
+    "rule": "pt",
+    "directions": [
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": -2,
+    "cob": -3,
+    "scob": -6,
+    "liteStd": -2,
+    "cobStd": -3,
+    "scobStd": -6,
+    "rank": 8
+  },
+  {
+    "name": "Chemo+TKI",
+    "rule": "pt",
+    "directions": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": -4,
+    "cob": -6,
+    "scob": -6,
+    "liteStd": -4,
+    "cobStd": -6,
+    "scobStd": -6,
+    "rank": 9
+  },
+  {
+    "name": "ICI+Chemo",
+    "rule": "CI",
+    "directions": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 2,
+    "cob": 1,
+    "scob": 1,
+    "liteStd": 2,
+    "cobStd": 1,
+    "scobStd": 1,
+    "rank": 2
+  },
+  {
+    "name": "ICI+ADC",
+    "rule": "CI",
+    "directions": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 3,
+    "cob": 3,
+    "scob": 3,
+    "liteStd": 3,
+    "cobStd": 3,
+    "scobStd": 3,
+    "rank": 1
+  },
+  {
+    "name": "ADC",
+    "rule": "CI",
+    "directions": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 0,
+    "cob": 0,
+    "scob": 0,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": 0,
+    "rank": 3
+  },
+  {
+    "name": "Chemo+Chemo",
+    "rule": "CI",
+    "directions": [
+      0,
+      0,
+      0,
+      null
+    ],
+    "k": 3,
+    "pairs": 3,
+    "lite": 0,
+    "cob": 0,
+    "scob": 0,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": 0,
+    "rank": 3
+  },
+  {
+    "name": "ICI+ICI",
+    "rule": "CI",
+    "directions": [
+      0,
+      null,
+      0,
+      0
+    ],
+    "k": 3,
+    "pairs": 3,
+    "lite": 0,
+    "cob": 0,
+    "scob": 0,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": 0,
+    "rank": 3
+  },
+  {
+    "name": "ICI+PARPi",
+    "rule": "CI",
+    "directions": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 0,
+    "cob": 0,
+    "scob": 0,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": 0,
+    "rank": 3
+  },
+  {
+    "name": "ICI",
+    "rule": "CI",
+    "directions": [
+      0,
+      0,
+      -1,
+      1
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 0,
+    "cob": 0,
+    "scob": -3,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": -3,
+    "rank": 9
+  },
+  {
+    "name": "ICI+TKI",
+    "rule": "CI",
+    "directions": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 0,
+    "cob": 0,
+    "scob": 0,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": 0,
+    "rank": 3
+  },
+  {
+    "name": "Chemo+TKI",
+    "rule": "CI",
+    "directions": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "k": 4,
+    "pairs": 6,
+    "lite": 0,
+    "cob": 0,
+    "scob": 0,
+    "liteStd": 0,
+    "cobStd": 0,
+    "scobStd": 0,
+    "rank": 3
+  }
+]
