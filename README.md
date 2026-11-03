@@ -2,6 +2,12 @@
 
 Response-Consistency-Across-endpoints (RCA) scoring tools for network meta-analysis (NMA), including updated Excel workbooks and a complete browser-based calculator.
 
+## Online calculator
+
+**[Open the RCA Score Calculator website](https://liuyanggggg.github.io/RCA-score-calculator/)**
+
+[Website source and documentation](website/) · [Production build](website/dist/) · [Run and deployment guide](website/README.md)
+
 ![Overview](overview.png)
 
 ## What is included
